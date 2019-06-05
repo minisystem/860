@@ -8,7 +8,7 @@
     (drawings 54)
     (tracks 0)
     (zones 0)
-    (modules 5)
+    (modules 7)
     (nets 4)
   )
 
@@ -149,8 +149,8 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 5.5 5.5)
-    (pad_drill 5.5)
+    (pad_size 5 5)
+    (pad_drill 5)
     (pad_to_mask_clearance 0)
     (pad_to_paste_clearance -0.05)
     (aux_axis_origin 0 0)
@@ -207,6 +207,30 @@
     (via_drill 0.45)
     (uvia_dia 0.3)
     (uvia_drill 0.1)
+  )
+
+  (module MyModules:SNAP_HOLE_0.125_INCH (layer F.Cu) (tedit 5CF5DA85) (tstamp 5CF5E836)
+    (at 130.04 46.75)
+    (fp_text reference SNAP-HOLE-0.125-INCH (at 0 -5) (layer F.SilkS) hide
+      (effects (font (size 1.5 1.5) (thickness 0.15)))
+    )
+    (fp_text value VAL** (at 0 5) (layer F.SilkS) hide
+      (effects (font (size 1.5 1.5) (thickness 0.15)))
+    )
+    (pad "" np_thru_hole circle (at 0 0) (size 5 5) (drill 5) (layers *.Cu *.Mask F.SilkS)
+      (clearance 0.3175))
+  )
+
+  (module MyModules:SNAP_HOLE_0.125_INCH (layer F.Cu) (tedit 5CF5DA85) (tstamp 5CF5E823)
+    (at 123.04 32.25)
+    (fp_text reference SNAP-HOLE-0.125-INCH (at 0 -5) (layer F.SilkS) hide
+      (effects (font (size 1.5 1.5) (thickness 0.15)))
+    )
+    (fp_text value VAL** (at 0 5) (layer F.SilkS) hide
+      (effects (font (size 1.5 1.5) (thickness 0.15)))
+    )
+    (pad "" np_thru_hole circle (at 0 0) (size 5 5) (drill 5) (layers *.Cu *.Mask F.SilkS)
+      (clearance 0.3175))
   )
 
   (module MyModules:SNAP_HOLE_0.125_INCH (layer F.Cu) (tedit 56C0A971) (tstamp 5CF5E81E)
